@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            // number of images of rocks
+            var N = 5;
+            var i;
+            var text = "";
+            var random_images_array = [];
+            for (i = 1; i <= N; i++) {
+                random_images_array.push("rocks"+i+".jpg")
+            }
+            function getRandomImage(imgAr, path) {
+                path = path || 'images/'; // default path here
+                var num = Math.floor( Math.random() * imgAr.length );
+                var img = imgAr[ num ];
+                var imgStr = '<img width="500px" src="' + path + img + '" alt = "">';
+                document.write(imgStr); document.close();
+            }
+        </script>
+        <h2>Hellmouth Rocks</h2>
+        <script type="text/javascript">getRandomImage(random_images_array);</script>
+    </body>
+</html>
+
