@@ -2,7 +2,7 @@
     <body>
         <script>
             // number of images of rocks
-            var N = 125;
+            var N = 118;
             var i;
             var text = "";
             var random_images_array = [];
@@ -13,7 +13,7 @@
                 path = path || 'images/'; // default path here
                 var num = Math.floor( Math.random() * imgAr.length );
                 var img = imgAr[ num ];
-                var imgStr = '<img width="500px" src="' + path + img + '" alt="a rock">';
+                var imgStr = '<img src="' + path + img + '" alt="a rock">';
                 document.write(imgStr); 
                 document.close();
             }
